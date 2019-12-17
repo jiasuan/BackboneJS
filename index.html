@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Project A</title>
+
+</head>
+<body>
+    
+    <!-- HTML Structure --> 
+    
+    <div class="container">
+        <header>
+            <img src="images/logo.png" class="logo" alt="logo">
+            <nav>
+                <ul class="menu">
+                    <li><a href ='router-test.html#'>Home</a></li>
+                    <li><a href ='#/about'>About</a></li>
+                    <li><a href ='#/join-us'>Product</a></li>
+                    <li><a href ='#/contact'>Contact</a></li>
+
+                </ul>
+            </nav>            
+        </header>
+    </div>
+
+    <div class="container-below">
+        <p id="content"></p>
+    </div>
+
+    
+    <footer>
+        <div>
+            <a href="router-test.html"><img src="images/logo.png" class ="logo"alt="logo"></a></br>
+            <a href="#/join-us" >Join Us Now!</a>
+        </div>
+    </footer>
+
+
+    <!-- Source -->
+    <script src ="js/jquery-3.4.1.js"></script>
+    <script src ="js/underscore.js"></script>
+    <script src ="js/backbone.js"></script>
+    <script src ="router-test-refresh.js"></script>
+
+    <!-- External Template -->
+    <script type="text/template" id="aboutcontent">
+        <h2><p class="list">Board of Directors</p></h2>
+        <ul class="namelist"> 
+        <% _.each(aboutcollection, function(model) {%> 
+           <li class="namelist" > <%= model.image %> </br> <blockquote><%= model.position %> </blockquote> <%= model.name %> </li>
+        <% }) %>
+        
+        </ul>
+
+
+    </script>
+
+    <script type="text/template" id="clickcontent">
+    </br>
+         <button class="clickbtn" id='button'> Send </button> 
+    </script>
+
+    <script type="text/template" id="callrequest">
+        <h2>Call Us Now!</h2>
+        <img src='images/call.jpg' alt='product-1' class='product-image'>
+        <p class='product'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>        
+        <button id='callbutton'> Request Now! </button>
+
+    </script>
+
+    
+</body>
+</html>

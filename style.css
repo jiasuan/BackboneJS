@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+html, body {
+    height: 100%;
+    background-color :#ffffff ;
+    margin:0;
+    font-family: 'Montserrat' ,sans-serif;
+    overflow-x: hidden; 
+    position: relative;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    overflow: hidden;
+}
+
+header {
+    background-color: #ffffff;
+}
+ul.menu {
+    list-style-type: none;
+    overflow-x: hidden;
+    background-color: #333333;
+    width: 100%;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+}
+
+ul.namelist {
+    background-color: white;
+    list-style-type: none;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+li.namelist {
+    float: center;
+    width: 33%;
+}
+
+.personimage {
+    margin: 10px;
+}
+  
+.container-below {
+    background-color: #00C2FF;
+    text-align: center;
+    padding: 10px 20px 30px 20px;
+    margin-top: -16px;
+    height: 450px;
+}
+
+footer {
+    background-color: lightgray;
+    width: 100%;
+
+    text-align: center;
+    bottom: 0;
+    margin: 0;
+    padding: 10px;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.list {
+    text-align: center;
+}
+
+.namelist {
+    background-color: none;
+}
+
+blockquote{
+    font-size: 20px;
+    line-height: 5px;
+    font-weight: bold;
+}
+
+button{
+    font-size: 20px;
+    border-radius: 12px;
+    margin: 20px;
+}
+
+input[type=text]{
+    height: 100px;
+    width: 400px;
+    padding-top: 0;
+}
+
+.home-image{
+    text-align: center;
+    width: 30%;
+}
+
+
+.product-image {
+    text-align: center;
+    width: 30%;
+}
+
+.request {
+    left: 45%;
+    padding: 50px;
+}
+
+.success {
+    width: 100px;
+    left: 45%;
+    border-radius: 50%;
+}
+
+.loader {
+    left: 45%;
+    position: relative;
+    border: 16px solid black;
+    border-radius: 50%;
+    border-top: 16px solid #ffffff;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
+
+@keyframes spin {
+    0% {-webkit-transform: rotate(0deg);}
+    100% {-webkit-transform: rotate(360deg);}
+}
